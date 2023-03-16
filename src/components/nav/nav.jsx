@@ -7,8 +7,8 @@ const Nav = ({links}) => {
             left section
         </section>
         <section>
-        {links.map(({link, label}) => (
-        <div>
+        {links.map(({link, label}, i) => (
+        <div key={i}>
         <p>{link}</p>
         <p>{label}</p>
         </div>
